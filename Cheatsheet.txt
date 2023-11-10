@@ -1,0 +1,5 @@
+A cheatsheet for parallel programming with CUDA.
+
+Flynn's Taxonomy - https://www.geeksforgeeks.org/computer-architecture-flynns-taxonomy/
+Basically non parallel program may be regarded as a SISD (Single Instruction, Single Data) - One data pool from which one instruction is executed. 
+CPU/GPU paralellism - SIMD - Single Instruction, Multiple Data - One instruction is run over different kinds of data. GPUs are obviously better at this.
