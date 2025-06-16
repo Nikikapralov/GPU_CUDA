@@ -65,6 +65,14 @@ build CMakeFiles\CUDAA.dir\raii_pod_array_buffer.cu.obj: CUDA_COMPILER__CUDAA_un
   TARGET_COMPILE_PDB = CMakeFiles\CUDAA.dir\
   TARGET_PDB = CUDAA.pdb
 
+build CMakeFiles\CUDAA.dir\gpu_vector.cu.obj: CUDA_COMPILER__CUDAA_unscanned_Debug C$:\Users\nikik\Desktop\CUDAA\gpu_vector.cu || cmake_object_order_depends_target_CUDAA
+  DEP_FILE = CMakeFiles\CUDAA.dir\gpu_vector.cu.obj.d
+  FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" -std=c++20 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
+  OBJECT_DIR = CMakeFiles\CUDAA.dir
+  OBJECT_FILE_DIR = CMakeFiles\CUDAA.dir
+  TARGET_COMPILE_PDB = CMakeFiles\CUDAA.dir\
+  TARGET_PDB = CUDAA.pdb
+
 
 # =============================================================================
 # Device Link build statements for EXECUTABLE target CUDAA
@@ -73,7 +81,7 @@ build CMakeFiles\CUDAA.dir\raii_pod_array_buffer.cu.obj: CUDA_COMPILER__CUDAA_un
 #############################################
 # Link the executable CMakeFiles\CUDAA.dir\cmake_device_link.obj
 
-build CMakeFiles\CUDAA.dir\cmake_device_link.obj: CUDA_EXECUTABLE_DEVICE_LINKER__CUDAA_Debug CMakeFiles\CUDAA.dir\main.cu.obj CMakeFiles\CUDAA.dir\raii_pod_array_buffer.cu.obj
+build CMakeFiles\CUDAA.dir\cmake_device_link.obj: CUDA_EXECUTABLE_DEVICE_LINKER__CUDAA_Debug CMakeFiles\CUDAA.dir\main.cu.obj CMakeFiles\CUDAA.dir\raii_pod_array_buffer.cu.obj CMakeFiles\CUDAA.dir\gpu_vector.cu.obj
   LANGUAGE_COMPILE_FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
   LINK_LIBRARIES = cudadevrt.lib cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\CUDAA.dir
@@ -89,7 +97,7 @@ build CMakeFiles\CUDAA.dir\cmake_device_link.obj: CUDA_EXECUTABLE_DEVICE_LINKER_
 #############################################
 # Link the executable CUDAA.exe
 
-build CUDAA.exe: CUDA_EXECUTABLE_LINKER__CUDAA_Debug CMakeFiles\CUDAA.dir\main.cu.obj CMakeFiles\CUDAA.dir\raii_pod_array_buffer.cu.obj CMakeFiles\CUDAA.dir\cmake_device_link.obj
+build CUDAA.exe: CUDA_EXECUTABLE_LINKER__CUDAA_Debug CMakeFiles\CUDAA.dir\main.cu.obj CMakeFiles\CUDAA.dir\raii_pod_array_buffer.cu.obj CMakeFiles\CUDAA.dir\gpu_vector.cu.obj CMakeFiles\CUDAA.dir\cmake_device_link.obj
   FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
   LINK_FLAGS = /debug /INCREMENTAL
   LINK_LIBRARIES = cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

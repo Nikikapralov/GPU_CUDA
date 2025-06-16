@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 
 template <typename T> requires std::is_trivially_copyable_v<T> && std::is_trivially_default_constructible_v<T>
